@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #E9ECE6;
+    text-align: -webkit-center;
+	font-family: 'Abel', sans-serif;
+}
+
+.cardsTable {
+	display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 90px;
+}
+
+.winMode {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+}
+
+.winWindow {
+	width: 300px;
+	height: 400px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	top: 90px;
+}
+
+.resetBtn {
+	width: 200px;
+	height: 50px;
+	font-size: larger;
+	position: relative;
+	top: 280px;
+	background-color: floralwhite;
+	border-radius: 50px;
+}
+
+.resetBtn:hover {
+	background-color: black;
+	color: whitesmoke;
+	border-color: whitesmoke;
+}
+
+.card {
+	font-size: 0px;
+	background-color: #AAB8B6;
+	border-radius: 15px;
+    width: 70px;
+    height:70px;
+	display: inline-block;
+	margin-right: 10px;
+    margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.show {
+	background-color: lightskyblue;
+    font-size: 3.5em;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+.btn {
+	font-size: 5em;
+    border-radius: 50%;
+    border-color: black;
+    background-color: #E9ECE6;
+    width: 300px;
+    height: 300px;
+    border-width: 6px;
+    cursor: pointer;
+    margin-top:90px;
+}
+
+.btn:hover {
+	background-color: black;
+	color: whitesmoke;
+	border-color: whitesmoke;
+}
+
+.red {
+	background-color: lightcoral
+}
+
+.counter {
+	background-color: whitesmoke;
+    /* float: left; */
+    min-width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0px 0px 10px #AAB8B6;
+    font-size: 40px;
+    position: fixed;
+}
+
+.starRate {
+	border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    /* float: right; */
+    background-color: whitesmoke;
+    height: 60px;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 0px 10px #AAB8B6;
+    font-size: 40px;
+    position: fixed;
+    right: 1px;
+}
+
+p {
+	font-size: 50px;
+	/* background-color: white; */
+	margin-bottom: 10px;
+	display: inline;
+}
+
+.movesTxt { /*WIN MODE*/
+	position: absolute;
+	top: 130px;
+	font-size: xx-large;
+	left: 50px;
+}
+
+.starTxt { /*WIN MODE*/
+	position: absolute;
+	top: 190px;
+	font-size: xx-large;
+	left: 70px;
+}
+
+.timeTxt {  /*WIN MODE*/
+	position: absolute;
+	top: 70px;
+	font-size: xx-large;
+	left: 69px;
+}
+
+.restart{ /*GAME MODE*/
+	width: 50px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    /* display: inline; */
+    font-size: 50px;
+    float: left;
+}
+
+.timer{ /*GAME MODE*/
+	font-size: 40px;
+    /* display: inline-block; */
+    float: right;
+    width: auto;
+    text-align: left;
+    /* margin: 0 auto; */
+}
+.title{
+	/* display: inline-block;  */
+    /* position: relative; */
+    font-size: 50px;
+    /* left: -130px; */
+}
+
+header{
+	background-color: whitesmoke;
+    margin-bottom: 10px;
+    height: 120px;
+}
+
+.btnsContain{
+	width: 320px;
+}
+
+@media screen and (max-width:317px) {
+	header{
+		background-color:inherit;
+	}
+	.title{
+		text-align: left;
+	}
+	.restart{
+		position: fixed;
+   		top: 1px;
+   		right: 1px;
+	}
+	.timer{
+		position: fixed;
+		top: 70px;
+		right: 1px;
+	}
+	.starRate{
+		width: 180px;
+	}
+}
