@@ -125,13 +125,13 @@ function game(gameStart, openedCards) {
 
             switch (openedCards.length + 1) {
                 case 1:
-                    starRate.innerHTML = `⛤⛤⛤`;
+                    starRate.innerHTML = `⭐⭐⭐`;
                     break;
                 case 21:
-                    starRate.innerHTML = `⛤⛤`;
+                    starRate.innerHTML = `⭐⭐`;
                     break;
                 case 31:
-                    starRate.innerHTML = `⛤`;
+                    starRate.innerHTML = `⭐`;
                     break;
                 default:
                     break;
