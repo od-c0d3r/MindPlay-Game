@@ -5,7 +5,8 @@
 
 body {
 	background-color: #E9ECE6;
-    text-align: -webkit-center;
+	text-align: -webkit-center;
+	text-align:	-moz-center;
 	font-family: 'Abel', sans-serif;
 }
 
@@ -61,6 +62,13 @@ body {
 	margin-right: 10px;
     margin-bottom: 10px;
 	cursor: pointer;
+	transition: all 0.4s ;
+}
+
+.card:hover {
+	background: black;
+	color: whitesmoke;
+	border-color: whitesmoke;
 }
 
 .show {
@@ -81,11 +89,12 @@ body {
     height: 300px;
     border-width: 6px;
     cursor: pointer;
-    margin-top:90px;
+	margin-top:90px;
+	transition: all 0.9s ;
 }
 
 .btn:hover {
-	background-color: black;
+	background: black;
 	color: whitesmoke;
 	border-color: whitesmoke;
 }
